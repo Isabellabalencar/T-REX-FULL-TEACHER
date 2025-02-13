@@ -92,11 +92,7 @@ function draw() {
     ground.velocityX = -(4 + 3* score/100)
     //pontuação
     score = score + Math.round(getFrameRate()/60);
-    
-    if(score>0 && score%100 === 0){
-       checkPointSound.play() 
-    }
-    
+ 
     if (ground.x < 0){
       ground.x = ground.width/2;
     }
